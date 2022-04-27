@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>performance Machine Learning</title>
+        <link rel="icon" type="image/x-icon" href='{%static "creative/assets/img/favicon.ico"%}' /> <!-- 수정-->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/creative/css/styles_resume.css" rel="stylesheet" /> <!-- 수정-->
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Machine Learning</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src='{%static "creative/assets/img/bg-masthead.jpg" %}' alt="..." /></span>
+            </a> <!-- 수정-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Ada_Boost">Ada Boost</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#LGBM">LGBM</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#KNN">KNN</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#BNB">BNB</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#SGD">SGD</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#SVC">SVC</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#RFC">RFC</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#XGB">XGBoost</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Go main</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/dl/view">Show DL</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Ada_BoostN-->
+            <section class="resume-section" id="Ada_Boost">
+                <p>Ada_Boost performance<br>
+                    {% for key, value in Ada_Boost.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'Ada_Boost_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'Ada_Boost_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+            <!-- LGBM-->
+            <section class="resume-section" id="LGBM">
+                <p>LGBM performance<br>
+                    {% for key, value in LGBM.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'LGBM_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'LGBM_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+            <!-- KNN-->
+            <section class="resume-section" id="KNN">
+                <p>KNN performance<br>
+                    {% for key, value in KNN.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'KNN_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'KNN_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+            <!-- Naive Bayesian-->
+            <section class="resume-section" id="BNB">
+                <p>Naive Bayesian performance<br>
+                    {% for key, value in BNB.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'BNB_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'BNB_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+            <!-- SGD-->
+            <section class="resume-section" id="SGD">
+                <p>SGD<br>
+                    {% for key, value in SGD.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'SGD_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'SGD_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+            <!-- SVC-->
+            <section class="resume-section" id="SVC">
+                <p>SVC<br>
+                    {% for key, value in SVC.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'SVC_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'SVC_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+            <!-- RFC-->
+            <section class="resume-section" id="RFC">
+                <p>RFC performance<br>
+                    {% for key, value in RFC.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'RFC_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'RFC_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+            <!-- XGBoost-->
+            <section class="resume-section" id="XGB">
+                <p>XGBoost performance<br>
+                    {% for key, value in XGB.items%}<br>
+                        {{key}} &nbsp {{value}}<br>
+                    {% endfor %}
+                </p>
+                <img src = "{% static 'XGB_ROC_curve.png'%}" height = '500' width = '500'>
+                <img src = "{% static 'XGB_confusion_matrix.png'%}" height = '500' width = '500'>
+            </section>
+            <hr class="m-0" />
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
