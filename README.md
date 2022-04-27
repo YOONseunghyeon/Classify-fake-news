@@ -1,6 +1,6 @@
 # Classify-fake-news
-- 데이터 전처리
-- 머신러닝
+- Preprocessing
+- Machine learning
 - Deep learning
 -
 -
