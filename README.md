@@ -1,6 +1,6 @@
 # Classify-fake-news
-- Preprocessing
+- NLP
 - Machine learning
 - Deep learning
 - Web
--
+
